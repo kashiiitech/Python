@@ -6,7 +6,7 @@ the first two numbers to determine in which order the list is sorted)."""
 
 
 
-#  it must have two parameters: first the list you want to insert and second the value in
+#  it must have two parameters: first the value you want to insert and second the list in
 
 #  which you want to insert the value. (You are not allowed to use the sort function of lists)
 
@@ -15,7 +15,7 @@ the first two numbers to determine in which order the list is sorted)."""
 
 
 
-def proper_index(lst,num):
+def proper_index(num,lst):
     lst.append(num)
     if lst[0]<lst[1]:
         for i in range(0,len(lst)+1):
