@@ -1,4 +1,5 @@
+
 def HCF(x,y):
-    while(x):
-        x,y = y,y%x
-        return y
+    while(y):
+        x,y = y,x%y
+    return x
