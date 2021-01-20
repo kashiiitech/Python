@@ -4,20 +4,20 @@
 
 
 
-def integer_count(x):
-    y = str(x)
-    counter1 = 0
-    counter2 = 0
-    counter3 = 0
+def evens_odds_zeros_count(num):
+    y = str(num)
+    evens = 0
+    odds = 0   
+    zeros = 0
     for i in y:
         i = int(i)
         if (i>0):
             if (i%2==0):
-                counter1+=1
+                evens+=1
         if not(i%2==0):
-            counter2+=1
+            odds+=1
         elif i == 0:
-            counter3+=1
-    print("Number of even : ",counter1)
-    print("Number of odd : ",counter2)
-    print("Number of zero : ",counter3)
+            zeros+=1
+    print("Number of even : ",evens)
+    print("Number of odd : ",odds)
+    print("Number of zero : ",zeros)
