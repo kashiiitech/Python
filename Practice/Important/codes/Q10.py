@@ -32,3 +32,22 @@ def sec_max(lst):
         if (i>minn) and (i<maxx):
             result = i
     return result
+
+
+
+# In this function first the list will be sorted and than simply its second last element is second maximum
+
+def second_maximum_from_lst(lst):
+    
+    for i in range(0,len(lst)):
+        
+        for j in range(i,len(lst)):
+            
+            if lst[i]>lst[j]:
+                
+                lst[i],lst[j]=lst[j],lst[i]
+    
+    second_maximum = lst[-2]
+    
+    return second_maximum
+    
