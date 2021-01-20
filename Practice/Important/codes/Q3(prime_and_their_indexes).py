@@ -9,7 +9,7 @@ def prime_count(lst):
     counter = 0        # This counter variable is used for to count the number of prime from a given list
     lst_index_prime = []     # this empty list is for to store the indexes of prime numbers .
     for i in lst:          #   this loop will take each element in each iteration in the list
-        if i == 1:
+        if i <= 1:
             continue
         for j in range(2,i):  #  this loop is for to check whether a number is prime or not .
             if i%j == 0:      #   if this condition become True than the number is not a prime
