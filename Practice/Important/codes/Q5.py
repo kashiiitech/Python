@@ -9,3 +9,16 @@ def common_data(list1, list2):
                  if x == y:
                     result = True
     return result
+
+
+
+# Second Logic
+
+
+def common_member(lst1,lst2):
+    for i in lst1:
+        for j in lst2:
+            if i == j:        # here first i will take first value of lst1 and comapare all values of lst 2 if it equal than return True
+                return True
+    else:
+        return False
