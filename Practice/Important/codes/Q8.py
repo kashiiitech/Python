@@ -4,12 +4,22 @@
 
 
 
-def reverse_list(x):
-    k = []
-    for i in range(len(x)-1,-1,-1):
-        k.append(x[i])
-    x.clear()
-    for j in k:
-        x.append(j)
-    return x
+def reverse_list(lst):
+    lst_reverse_elements = []
+    for i in range(len(lst)-1,-1,-1):
+        lst_reverse_elements.append(lst[i])
+    lst.clear()
+    for j in lst_reverse_elements:
+        lst.append(j)
+    return lst
+
+
+
+# Second simple logic
+
+def reverse_list(lst):
+    list_reverse = []
+    for i in range(len(lst)-1,-1,-1):
+        list_reverse.append(lst[i])
+    return list_reverse
     
