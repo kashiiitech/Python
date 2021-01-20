@@ -3,7 +3,11 @@ divisors of the number in the list and prints them. Your function should print â
 number if its divisors are found in the list."""
 
 
-def lst_divisor(lst,num): 
+def lst_divisor(lst,num):
+    if num == 0:
+        return print("Can not divided by zero")
+    elif len(lst)==0:
+        return print("The list is empty !")
     divisors = []       # this empty list store the divisors from the list
     for i in lst:
         if(i%num==0): 
