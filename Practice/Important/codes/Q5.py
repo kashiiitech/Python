@@ -22,3 +22,15 @@ def common_member(lst1,lst2):
                 return True
     else:
         return False
+    
+    
+    
+    # Third Logic
+    
+    
+    def common_member(lst1,lst2):
+    for i in lst1:
+        if i in lst2:      # here i will take every value of lst1 and check it in lst2 if it is available than it return True else it return False
+            return True
+    else:
+        return False
