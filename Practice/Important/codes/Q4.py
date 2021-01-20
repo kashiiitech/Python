@@ -3,9 +3,12 @@ divisors of the number in the list and prints them. Your function should print â
 number if its divisors are found in the list."""
 
 
-def lst_divisor(x,num):
-    for i in x:
-        if(i%num==0):
-            print(i)
-    else:
-        print("No Divisor Found")
+def lst_divisor(lst,num): 
+    divisors = []       # this empty list store the divisors from the list
+    for i in lst:
+        if(i%num==0): 
+            divisors.append(i)
+    for divisor in divisors:
+        print (divisor)
+    if len(divisors)==0:
+        print("No divisor Found")
