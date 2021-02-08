@@ -12,7 +12,7 @@ the menu. You can assume that the user will enter a valid integer """
 #	2. Subtract two numbers
 #	3. Multiply two numbers
 #	4. Divide two numbers
-
+#   5. Average of two numbers
 
 
 try:
